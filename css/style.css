@@ -764,8 +764,7 @@ button {
   margin-right: 7px;
   border-radius: 2px;
 }
-.modal__btn {
-}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
