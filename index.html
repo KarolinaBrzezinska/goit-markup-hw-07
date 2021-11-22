@@ -23,7 +23,7 @@
 				<a class="logo link page-header__logo" href="#">
 					Web<span class="logo__part--light-theme">Studio</span>
 				</a>
-				<nav>
+				<nav class="page-header__nav">
 					<ul class="nav list">
 						<li class="nav__item active">
 							<a class="nav__link link" href="#"> Agencja</a>
@@ -39,17 +39,17 @@
 					</ul>
 				</nav>
 				<ul class="contacts list">
-					<li class="contact__item">
-						<a class="contact__link link" href="mailto:info@devstudio.com">
-							<svg class="contact__icon--mail">
+					<li class="contacts__item">
+						<a class="contacts__link link" href="mailto:info@devstudio.com">
+							<svg class="contacts__icon--mail">
 								<use href="images/icons.svg#icon-header-1envelope"></use>
 							</svg>
 							info@devstudio.com</a
 						>
 					</li>
-					<li class="contact__item">
-						<a class="contact__link link" href="tel:+48111111111">
-							<svg class="contact__icon--phone">
+					<li class="contacts__item">
+						<a class="contacts__link link" href="tel:+48111111111">
+							<svg class="contacts__icon--phone">
 								<use href="images/icons.svg#icon-header-2smartphone"></use>
 							</svg>
 							+48 111 111 111</a
@@ -61,7 +61,7 @@
 		<main>
 			<section class="main-section">
 				<div class="container main-section__container">
-					<h1 class="main-section__header">
+					<h1 class="main-section__header	">
 						efektywne rozwiązania dla waszego biznesu
 					</h1>
 					<button class="main-section__btn btn" type="button" data-modal-open>
@@ -72,8 +72,8 @@
 
 			<section class="feautre">
 				<div class="container feature__container">
-					<ul class="list">
-						<li class="list__item link">
+					<ul class="feautre__list list">
+						<li class="feautre__list_item list__item link">
                             <div class="feature__icon--background">
 							<a class="feature__link" href="">
 								<svg class="feature__icon">
@@ -497,5 +497,73 @@
 				</div>
 			</div>
 		</footer>
+			<div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
+			<div class="modal">
+				<button type="button" class="modal__btn--close" data-modal-close>
+					<svg class="modal__btn--icon">
+						<use href="images/icons.svg#icon-close-black"></use>
+					</svg>
+				</button>
+
+				<form class="modal__form">
+					<fieldset class="modal__form__group">
+						<legend class="modal__form__header">
+							Zostaw swoje dane w formularzu poniżej
+						</legend>
+						<div class="div-class">
+							<label class="modal__form__label">
+								Imię
+								<input class="modal__form__input" type="text" name="name" />
+								<svg class="modal__form__icon modal__form__icon--name">
+									<use href="images/icons.svg#icon-form-avatar"></use>
+								</svg>
+							</label>
+							<label class="modal__form__label" class="view" class="name">
+								Telefon
+								<input class="modal__form__input" type="text" name="name" />
+								<svg class="modal__form__icon modal__form__icon--tel">
+									<use href="images/icons.svg#icon-form-phone"></use>
+								</svg>
+							</label>
+							<label class="modal__form__label" class="view" class="name">
+								Email
+								<input class="modal__form__input" type="text" name="name" />
+								<svg class=" modal__form__icon modal__form__icon--email">
+									<use href="images/icons.svg#icon-form-mail"></use>
+								</svg>
+							</label>
+							<label class="modal__form__usercomment"
+								>Komentarz
+								<textarea
+									class="modal__form__usercomment--text"
+									name="comment"
+									rows="8"
+									placeholder="Wprowadź tekst"
+								></textarea>
+							</label>
+						</div>
+					</fieldset>
+				</form>
+
+				<form class="modal__declaration" action="#" method="post">
+					<input
+						class="modal__declaration__input visually-hidden"
+						id="user-policy"
+						type="checkbox"
+						name="policy"
+					/>
+					<label for="user-policy" class="modal__declaration__label"
+						>Oświadczam iż akceptuję
+						<a class="modal__declaration__link">Regulamin </a>
+						 &nbspi&nbsp
+						<a class="modal__declaration__link"> Politykę Prywatności</a>.</label
+					>
+						<button class="modal__btn btn" type="submit">Wyślij</button>
+				</form>
+
+			
+			</div>
+		</div>
+		<script src="js/modal.js"></script>
 	</body>
 </html>
