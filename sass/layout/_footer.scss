@@ -1,0 +1,30 @@
+.page-footer {
+  background-color: var(--footer-background-color);
+}
+.page-footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__left-side {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+.page-footer__left-side__logo {
+  margin-bottom: 20px;
+}
+
+.page-footer____left-side__address {
+  flex-direction: column;
+}
+.page-footer__social-links {
+  flex-direction: column;
+  margin-top: 12px;
+}
+.page-footer__social-links__title {
+  color: var(--secondary-font-color);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

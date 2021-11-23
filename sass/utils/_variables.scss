@@ -1,0 +1,31 @@
+:root {
+	/* font style */
+	--main-font-style: "Roboto", sans-serif;
+	--logo-font-style: "Raleway", sans-serif;
+
+	/* background color */
+	--main-background-color: #ffffff;
+	--secondary-background-color: #f5f4fa;
+	--footer-background-color: #2f303a;
+	--figcaption-background-color: rgba(47, 48, 58, 0.8);
+	--main-image-background-color: rgba(47, 48, 58, 0.4);
+
+	/* font-color */
+	--strong-font-color: #212121;
+	--normal-font-color: #757575;
+	--secondary-font-color: #ffffff;
+	--header-logo-font-color: #000000;
+	--footer-description-font-color: rgba(255, 255, 255, 0.6);
+
+	/* border color */
+	--header-border-color: #ececec;
+	--footer-input-border-color: #rgba(255, 255, 255, 0.3);
+	--portfolio-border: #eeeeee;
+	/* brand color */
+	--brand-color: #2196f3;
+
+	/* icon fill */
+	--main-fill: #afb1b8;
+	--secondary-fill: #212121;
+	--footer-fill: rgba(255, 255, 255, 0.1);
+}

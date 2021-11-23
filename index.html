@@ -318,7 +318,7 @@
 							/>
 							<h3 class="workers__title">John Doe</h3>
 							<p class="workers__job">UI Designer</p>
-							<ul class="social-list list">
+							<ul class="workers__social-list list">
 								<li class="social-list__item">
 									<a class="social-list__link" href="">
 										<svg class="social-list__icon">
@@ -410,10 +410,10 @@
                 
                 <div class="page-footer__left-side">
 
-					<a class="logo page-footer__logo link" href="index.html" target="_blank"
+					<a class="logo page-footer__left-side__logo link" href="index.html" target="_blank"
 						>Web<span class="logo__part--dark-theme">Studio</span></a
 					><address class="address">
-						<ul class="address__list list">
+						<ul class="page-footer____left-side__address list address">
 							<li class="address__item">
 								<a
 									class="address__link--light link"
@@ -438,9 +438,9 @@
 						</ul>
 					</address>
 				</div>
-				<div class="join-us">
-					<p class="join-us__title">dołącz do nas</p>
-					<ul class="social-list__item list">
+				<div class="page-footer__social-links">
+					<p class="page-footer__social-links__title">dołącz do nas</p>
+					<ul class="page-footer__social-list list">
 						<li class="social-list__item">
 							<a class="social-list__link" href="">
 								<svg class="social-list__icon">
@@ -473,23 +473,23 @@
 				</div>
 				<div class="page-footer__right-side">
 					<form
-						name="footer-form"
+						name="newsletter-form"
 						autocomplete="on"
 						novalidate
-						class="footer-form__newsletter"
+						class="newsletter-form"
 					>
-						<label class="footer-form__label">
-							<p class="footer-form__text">Zapisz się do newslettera</p>
+						<label class="newsletter-form__label">
+							<p class="newsletter-form__title">Zapisz się do newslettera</p>
 							<input
-								type=""
-								name="email"
-								class="footer-form__input"
+								type="e-mail"
+								name="newsletter-form"
+								class="newsletter-form__input"
 								placeholder="E-mail"
 							/>
 						</label>
-						<button type="submit" class="btn footer-form__btn">
+						<button type="submit" class="btn" name="newsletter-form">
 							Zapisz się
-							<svg class="footer-form__icon">
+							<svg class="newsletter-form__icon">
 								<use href="images/icons.svg#icon-footer-newsletter-sent"></use>
 							</svg>
 						</button>

@@ -1,0 +1,13 @@
+.products__filters__list {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+.products__cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.products__cards__card:nth-child(-n + 6){
+  margin-bottom: 30px;
+}

@@ -1,4 +1,29 @@
+@import "./sass/utils/visualy-hidden";
+@import "./sass/utils/variables";
+
 @import "./sass/base/common";
 @import "./sass/base/container";
+@import "./sass/base/section";
+
+@import "./sass/components/active";
+@import "./sass/components/address";
+@import "./sass/components/btn";
+@import "./sass/components/card";
+@import "./sass/components/contacts";
+@import "./sass/components/filters";
 @import "./sass/components/logo";
-@import "./sass/components/nav-link";
+@import "./sass/components/modal";
+@import "./sass/components/nav";
+@import "./sass/components/newsletter-form";
+@import "./sass/components/social_list";
+
+
+@import "./sass/layout/header";
+@import "./sass/layout/main-section";
+@import "./sass/layout/feature";
+@import "./sass/layout/offer";
+@import "./sass/layout/workers";
+@import "./sass/layout/clients";
+@import "./sass/layout/footer";
+
+@import "./sass/layout/products";
