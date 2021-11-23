@@ -8,7 +8,7 @@
 @import "./sass/components/active";
 @import "./sass/components/address";
 @import "./sass/components/btn";
-@import "./sass/components/card";
+@import "./sass/components/product-card";
 @import "./sass/components/contacts";
 @import "./sass/components/filters";
 @import "./sass/components/logo";
@@ -16,6 +16,10 @@
 @import "./sass/components/nav";
 @import "./sass/components/newsletter-form";
 @import "./sass/components/social_list";
+@import "./sass/components/feature-card";
+@import "./sass/components/offer-card";
+@import "./sass/components/workers-card";
+@import "./sass/components/clients-item";
 
 
 @import "./sass/layout/header";
@@ -26,4 +30,5 @@
 @import "./sass/layout/clients";
 @import "./sass/layout/footer";
 
+@import "./sass/layout/menu-products";
 @import "./sass/layout/products";

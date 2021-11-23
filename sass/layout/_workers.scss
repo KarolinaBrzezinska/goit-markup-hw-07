@@ -1,32 +1,9 @@
 .workers {
   background-color: var(--secondary-background-color);
 }
-.workers__item {
-  background-color: var(--main-background-color);
-  padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-}
-.workers__title,
-.workers__job {
-  font-size: 16px;
-  line-height: 1.188;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.workers__title {
-  color: var(--strong-font-color);
-  font-weight: 500;
-  padding-top: 30px;
-  padding-bottom: 10px;
-}
-.workers__job {
-  margin-bottom: 16px;
-}
-.workers__social-list {
-  margin-right: 32px;
-  margin-left: 32px;
+
+.workers__list{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  
 }

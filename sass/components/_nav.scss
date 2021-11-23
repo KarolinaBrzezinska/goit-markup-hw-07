@@ -1,15 +1,10 @@
-.nav {
-  margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
+
 .nav__link {
   color: var(--strong-font-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.142;
   letter-spacing: 0.02em;
-  padding-top: 32px;
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-transition);

@@ -1,10 +1,14 @@
 
+.social-list__item:not(:last-child){
+margin-right: 10px;
+}
 
-.social-list__icon {
+.social-list__item__icon {
   width: 20px;
   height: 20px;
 }
-.social-list__link {
+
+.social-list__item__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -14,12 +18,12 @@
   fill: var(--main-fill);
 }
 
-.social-list__link:hover,
-.social-list__link:focus {
+.social-list__item__link:hover,
+.social-list__item__link:focus {
   background-color: var(--brand-color);
   fill: var(--social-list-fill);
 }
-.social-list__link {
+.social-list__item__link {
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-transition);

@@ -1,9 +1,12 @@
 
-.filters-item:not(last-child) {
-  margin-right: 8px;
+.filters{
+  width: 572px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.filters-btn {
+.filters__btn {
+  color: var(--strong-font-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -18,8 +21,8 @@
   transition-timing-function: var(--timing-transition);
 }
 
-.filters-btn:hover,
-.filters-btn:focus {
+.filters__btn:hover,
+.filters__btn:focus {
   background-color: var(--brand-color);
   color: var(--secondary-font-color);
 }
