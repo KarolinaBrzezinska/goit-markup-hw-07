@@ -1,22 +1,28 @@
+.active {
+  position: relative;
+  &:after {
+    width: 53px;
+    height: 4px;
 
-.active,
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+    content: "";
+    border-radius: 2px;
+    background-color: var(--brand-color);
+  }
+}
+
 .active-portfolio {
   position: relative;
-}
-.active::after {
-  width: 53px;
-  height: 4px;
-}
-.active-portfolio::after {
-  width: 58px;
-  height: 4px;
-}
-.active::after,
-.active-portfolio::after {
-  position: absolute;
-  bottom: -28px;
-  right: 0;
-  content: "";
-  border-radius: 2px;
-  background-color: var(--brand-color);
+  &:after {
+    width: 58px;
+    height: 4px;
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+    content: "";
+    border-radius: 2px;
+    background-color: var(--brand-color);
+  }
 }

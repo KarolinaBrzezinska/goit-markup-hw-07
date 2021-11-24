@@ -1,17 +1,17 @@
 .offer-card {
   position: relative;
-}
-.offer-card__caption {
-  position: absolute;
-  bottom: 0px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--secondary-font-color);
-  background: var(--figcaption-background-color);
-  width: 100%;
-  padding: 27px;
+  &__caption {
+    position: absolute;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-font-color);
+    background: var(--figcaption-background-color);
+    width: 100%;
+    padding: 27px;
+  }
 }

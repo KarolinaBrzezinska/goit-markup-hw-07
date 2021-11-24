@@ -1,10 +1,15 @@
-.address__item:not(:last-child) {
-  padding-bottom: 9px;
-}
-
-.address__link--light{
-  color: var(--secondary-font-color);
-}
-.address__link--dark {
-  color: var(--footer-description-font-color);
+.address{
+    &__item{
+        &:not(:last-child){
+         padding-bottom: 9px;   
+        }
+    }
+     &__link {
+        &--light{
+            color: var(--secondary-font-color);
+        }
+        &--dark{
+           color: var(--footer-description-font-color);  
+        }
+        }
 }
