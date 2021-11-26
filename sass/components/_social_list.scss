@@ -14,14 +14,16 @@
       border-radius: 50%;
       align-items: center;
       justify-content: center;
-      fill: var(--main-fill);
-      transition-property: background-color, fill;
-      transition-duration: 250ms;
-      transition-timing-function: var(--timing-transition);
+      fill: $main-fill;
+      transition: {
+        property: background-color, fill;
+        duration: 250ms;
+        timing-function: $timing-transition;
+      }
       &:hover,
       &:focus {
-        background-color: var(--brand-color);
-        fill: var(--social-list-fill);
+        background-color: $brand-color;
+        fill: $social-list-fill;
       }
     }
   }

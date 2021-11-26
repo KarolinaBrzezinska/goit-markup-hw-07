@@ -9,8 +9,8 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--secondary-font-color);
-    background: var(--figcaption-background-color);
+    color:$secondary-font-color;
+    background:$figcaption-background-color;
     width: 100%;
     padding: 27px;
   }

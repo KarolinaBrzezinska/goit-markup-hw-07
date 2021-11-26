@@ -1,5 +1,5 @@
 .main-section {
-  background-color: var(--main-image-background-color);
+  background-color: $main-image-background-color;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -25,7 +25,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--secondary-font-color);
+  color: $secondary-font-color;
   padding-top: 200px;
   margin-bottom: 30px;
 }

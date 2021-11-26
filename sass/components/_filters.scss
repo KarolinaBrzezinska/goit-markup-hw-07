@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   &__btn {
-    color: var(--strong-font-color);
+    color: $strong-font-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
@@ -12,15 +12,17 @@
     padding: 6px 22px;
     border-radius: 4px;
     border: none;
-    background-color: var(--secondary-background-color);
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-transition);
+    background-color: $secondary-background-color;
+    transition: {
+      property: color, background-color;
+      duration: 250ms;
+      timing-function: $timing-transition;
+    }
 
     &:hover,
     &:focus {
-      background-color: var(--brand-color);
-      color: var(--secondary-font-color);
+      background-color: $brand-color;
+      color: $secondary-font-color;
     }
   }
 }

@@ -6,10 +6,10 @@
     }
      &__link {
         &--light{
-            color: var(--secondary-font-color);
+            color: $secondary-font-color;
         }
         &--dark{
-           color: var(--footer-description-font-color);  
+           color: $footer-description-font-color;  
         }
         }
 }

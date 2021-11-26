@@ -1,6 +1,6 @@
 .logo {
-	color: var(--brand-color);
-	font-family: var(--logo-font-style);
+	color: $brand-color;
+	font-family: $logo-font-style;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.192;
@@ -8,10 +8,10 @@
 	
 	&__part{
 	    &--light-theme{
-	        color:var(--header-logo-font-color);
+	        color:$header-logo-font-color;
 	    }
 	    &--dark-theme{
-	        color: var(--secondary-font-color);
+	        color: $secondary-font-color;
 	    }
 	}
 }

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   &__icon-box {
-    background-color: var(--secondary-background-color);
+    background-color: $secondary-background-color;
     width: 270px;
     height: 120px;
     display: flex;
@@ -19,7 +19,7 @@
     &__title {
       font-size: 14px;
       letter-spacing: 0.03em;
-      color: var(--strong-font-color);
+      color: $strong-font-color;
       font-weight: 700;
       line-height: 1.143;
       text-transform: uppercase;

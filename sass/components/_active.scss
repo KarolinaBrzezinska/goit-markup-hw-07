@@ -3,13 +3,12 @@
   &:after {
     width: 53px;
     height: 4px;
-
     position: absolute;
     bottom: -28px;
     right: 0;
     content: "";
     border-radius: 2px;
-    background-color: var(--brand-color);
+    background-color: $brand-color;
   }
 }
 
@@ -23,6 +22,6 @@
     right: 0;
     content: "";
     border-radius: 2px;
-    background-color: var(--brand-color);
+    background-color: $brand-color;
   }
 }

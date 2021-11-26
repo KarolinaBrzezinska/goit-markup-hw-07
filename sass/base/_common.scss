@@ -1,7 +1,7 @@
 
 body {
-	font-family: var(--main-font-style);
-	color: var(--normal-font-color);
+	font-family: $main-font-style;
+	color: $normal-font-color;
 }
 
 h1,
@@ -36,6 +36,6 @@ img {
 }
 
 button {
-  font-family: var(--main-font-style);
+  font-family: $main-font-style;
   cursor: pointer;
 }

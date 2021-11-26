@@ -1,18 +1,20 @@
 .nav {
   &__link {
-    color: var(--strong-font-color);
+    color: $strong-font-color;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: var(--timing-transition);
+    transition: {
+      property: color, fill;
+      duration: 250ms;
+      timing-function: $timing-transition;
+    }
 
     &:hover,
     &:focus {
-      color: var(--brand-color);
-      fill: var(--brand-color);
+      color: $brand-color;
+      fill: $brand-color;
     }
   }
   &__item:not(:last-child) {

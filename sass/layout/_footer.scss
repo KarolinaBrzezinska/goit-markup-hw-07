@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: var(--footer-background-color);
+  background-color: $footer-background-color;
 }
 .page-footer__container {
   display: flex;
@@ -24,7 +24,7 @@
   margin-top: 12px;
 }
 .page-footer__social-links__title {
-  color: var(--secondary-font-color);
+  color: $secondary-font-color;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
