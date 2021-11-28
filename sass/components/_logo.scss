@@ -2,8 +2,8 @@
 	color: $brand-color;
 	font-family: $logo-font-style;
 	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.192;
+	font-size: 24px;
+	line-height: 1.167;
 	letter-spacing: 0.03em;
 	
 	&__part{
@@ -13,5 +13,12 @@
 	    &--dark-theme{
 	        color: $secondary-font-color;
 	    }
+	}
+}
+
+@media screen and (min-width: 1200px){
+	.logo{
+		font-size: 26px;
+		line-height: 1.192;
 	}
 }
