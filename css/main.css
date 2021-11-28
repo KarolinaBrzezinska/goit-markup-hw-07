@@ -781,36 +781,84 @@ button {
 }
 
 .main-section {
-  background-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
-  background-size: cover;
+  background-image: url(../../images/main-section/main-bg-mobile.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
-  flex-grow: 1;
-  padding: 0 15px;
-  margin-bottom: 94px;
 }
 
 .main-section__container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .main-section__header {
-  width: 696px;
+  width: 365px;
+  padding-top: 106px;
+  padding-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 200px;
-  margin-bottom: 30px;
 }
 
 .main-section__btn {
-  margin-bottom: 200px;
+  margin-bottom: 118px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .main-section {
+    background-image: url(../../images/main-section/main-bg-mobile.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 480px) and (max-width: 768px) {
+  .main-section {
+    background-image: url(../../images/main-section/main-bg-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main-section/main-bgi-tablet.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) and (max-width: 1200px) {
+  .main-section {
+    background-image: url(../../images/main-section/main-bgi-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/main-section/main-bgi-desktop.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .main-section__header {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
+  .main-section {
+    background-image: url(../../images/main-section/main-bgi-desktop@2x.jpg);
+  }
 }
 
 .feature__container__list {
