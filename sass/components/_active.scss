@@ -1,8 +1,17 @@
 .active {
   position: relative;
   &:after {
-    width: 53px;
-    height: 4px;
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+    content: "";
+    border-radius: 2px;
+    background-color: $brand-color;
+  }
+}
+.active-portfolio {
+  position: relative;
+  &:after {
     position: absolute;
     bottom: -28px;
     right: 0;
@@ -12,16 +21,62 @@
   }
 }
 
-.active-portfolio {
-  position: relative;
-  &:after {
-    width: 58px;
-    height: 4px;
-    position: absolute;
-    bottom: -28px;
-    right: 0;
-    content: "";
-    border-radius: 2px;
-    background-color: $brand-color;
+@media screen and (min-width: 768px) {
+  .active {
+    &:after {
+      width: 53px;
+      height: 4px;
+    }
+  }
+  .active-portfolio {
+    &:after {
+      width: 58px;
+      height: 4px;
+    }
   }
 }
+
+@media screen and (min-width: 768px) {
+  .active {
+    &:after {
+      width: 53px;
+      height: 4px;
+      bottom: -32px;
+    }
+  }
+  .active-portfolio {
+    &:after {
+      width: 58px;
+      bottom: -32px;
+    }
+  }
+}
+
+// @media screen and (min-width: 1200px) {
+//   .active {
+//     position: relative;
+//     &:after {
+//       width: 53px;
+//       height: 4px;
+//       position: absolute;
+//       bottom: -28px;
+//       right: 0;
+//       content: "";
+//       border-radius: 2px;
+//       background-color: $brand-color;
+//     }
+//   }
+//   .active-portfolio {
+//     position: relative;
+//     &:after {
+//       width: 58px;
+//       height: 4px;
+//       position: absolute;
+//       bottom: -28px;
+//       right: 0;
+//       content: "";
+//       border-radius: 2px;
+//       background-color: $brand-color;
+//     }
+//   }
+// }

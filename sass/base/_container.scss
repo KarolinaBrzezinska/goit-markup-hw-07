@@ -4,6 +4,12 @@
   align-items: center;
   margin: 0 ;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 15px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -16,5 +22,6 @@
     width: 1200px;
     padding: 0 15px;
   }
+  
 }
 

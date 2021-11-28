@@ -63,6 +63,13 @@ button {
   margin: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding: 0 15px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -97,8 +104,6 @@ button {
 }
 
 .active:after {
-  width: 53px;
-  height: 4px;
   position: absolute;
   bottom: -28px;
   right: 0;
@@ -112,14 +117,35 @@ button {
 }
 
 .active-portfolio:after {
-  width: 58px;
-  height: 4px;
   position: absolute;
   bottom: -28px;
   right: 0;
   content: "";
   border-radius: 2px;
   background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .active:after {
+    width: 53px;
+    height: 4px;
+  }
+  .active-portfolio:after {
+    width: 58px;
+    height: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .active:after {
+    width: 53px;
+    height: 4px;
+    bottom: -32px;
+  }
+  .active-portfolio:after {
+    width: 58px;
+    bottom: -32px;
+  }
 }
 
 .address__item:not(:last-child) {
@@ -670,22 +696,81 @@ button {
 
 .page-header {
   border-bottom: 1px solid #ececec;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .page-header__container {
   display: flex;
+  justify-content: space-between;
+}
+
+.page-header__logo {
+  margin: 16px 0;
+}
+
+.page-header__menu {
+  display: block;
+  padding: 22px;
+}
+
+.page-header__menu__burger {
+  width: 24px;
+  height: 16px;
 }
 
 .page-header__nav {
-  margin-left: 93px;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  display: none;
 }
 
 .page-header__contacts {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header__menu {
+    display: none;
+  }
+  .page-header__logo {
+    margin: 26px 0;
+  }
+  .page-header__nav {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .page-header__contacts {
+    display: flex;
+    flex-direction: column;
+    height: 38px;
+    margin: 21px;
+  }
+  .page-header__contacts__link {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header__menu {
+    display: none;
+  }
+  .page-header__logo {
+    margin: 24px 0;
+  }
+  .page-header__nav {
+    display: flex;
+    margin-left: 93px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .page-header__contacts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    height: auto;
+    margin-left: auto;
+  }
 }
 
 .main-section {
