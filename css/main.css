@@ -1048,6 +1048,12 @@ button {
     height: 600px;
     background-image: none;
   }
+  .main-section__header {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.364;
+    letter-spacing: 0.06em;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {

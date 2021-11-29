@@ -14,7 +14,6 @@
   }
   &__header {
     width: 365px;
-
     padding-bottom: 30px;
     font-weight: 900;
     font-size: 26px;
@@ -41,16 +40,19 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 768px){
-  .main-section{
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 768px) {
+  .main-section {
     background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../../images/mobile/bg/1-mobile-bgi@2x.jpg);
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/mobile/bg/1-mobile-bgi@2x.jpg);
   }
 }
 
-// tablet 
+// tablet
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .main-section {
     background-image: linear-gradient(
@@ -65,13 +67,16 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1200px){
- .main-section{ 
-   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../../images/tablet/bg/1-tablet-bgi@2x.jpg);
- }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/tablet/bg/1-tablet-bgi@2x.jpg);
+  }
 }
 
 //desktop
@@ -86,15 +91,24 @@
 
     &__container {
       height: 600px;
-      background-image: none;      
+      background-image: none;
+    }
+    &__header {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.364;
+      letter-spacing: 0.06em;
     }
   }
 }
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px){
- .main-section{
-   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ), url(../../images/desktop/bg/main-bgi-desktop@2x.jpg);
- }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/desktop/bg/main-bgi-desktop@2x.jpg);
+  }
 }
