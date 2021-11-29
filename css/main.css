@@ -1064,6 +1064,7 @@ button {
 
 .feature {
   padding-top: 94px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
@@ -1075,7 +1076,7 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .feature {
-    padding-bottom: 15px;
+    margin-bottom: 45px;
   }
   .feature__container {
     padding: 0;
@@ -1089,6 +1090,9 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .feature {
+    margin-bottom: 94px;
+  }
   .feature__container__list {
     display: flex;
     justify-content: space-between;
