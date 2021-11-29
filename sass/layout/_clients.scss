@@ -1,4 +1,9 @@
-
-
-
-
+.clients {
+    padding-top: 60px;
+  &__container {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

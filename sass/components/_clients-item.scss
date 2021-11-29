@@ -1,6 +1,13 @@
 .clients {
+  
+  &__container{
+    &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+  }
   &__item {
-
     &__link {
       width: 210px;
       height: 92px;
@@ -9,6 +16,7 @@
       align-items: center;
       justify-content: center;
       fill: $main-fill;
+      margin-bottom: 30px;
       display: flex;
       transition: {
         property: fill;
@@ -22,24 +30,32 @@
       }
     }
     &__icon {
+      width: 106px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
   }
 }
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .clients {
-    &__item {
-      &__link {
-        width: 170px;
-        height: 92px;
-        &__icon {
-          width: 106px;
-          height: 60px;
-        }
-      }
-    }
+    display: none;
   }
 }
+
+// @media screen and (min-width: 1200px) {
+//   .clients {
+//     display: none;
+//   //   &__item {
+//   //     &__link {
+//   //       width: 170px;
+//   //       height: 92px;
+//   //       &__icon {
+//   //         width: 106px;
+//   //         height: 60px;
+//   //       }
+//   //     }
+//   //   }
+//    }
+// }
