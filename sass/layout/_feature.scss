@@ -1,5 +1,9 @@
+.feature{
+  padding-top: 94px;
+}
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .feature {
+    
     &__container {
       display: flex;
       flex-direction: column;
