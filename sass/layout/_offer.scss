@@ -1,6 +1,12 @@
-.offer__list{
-  display:flex;
+@media screen and (max-width: 1200px) {
+  .section-offer {
+    display: none;
+  }
 }
-.offer__list__item:not(last-child){
-  margin-right: 30px;
+
+@media screen and (min-width: 1200px) {
+  .offer__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }

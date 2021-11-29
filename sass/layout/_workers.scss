@@ -1,9 +1,26 @@
 .workers {
+  padding: 60px 0;
   background-color: $secondary-background-color;
+
 }
 
-.workers__list{
-  display: flex;
-  justify-content: space-between;
-  
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .workers {
+    &__header {
+    }
+    &__list {
+      &__item {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
