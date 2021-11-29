@@ -21,11 +21,12 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .active {
     &:after {
       width: 53px;
       height: 4px;
+      bottom: -30px;
     }
   }
   .active-portfolio {
@@ -36,12 +37,12 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .active {
     &:after {
       width: 53px;
       height: 4px;
-      bottom: -32px;
+      bottom: -22px;
     }
   }
   .active-portfolio {
