@@ -1,6 +1,39 @@
-
-.feature__container__list{
-  display: flex;
-  justify-content: space-between;
-
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .feature {
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .feature {
+    padding-bottom: 15px;
+    &__container {
+      padding: 0;
+      width: 738px;
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature {
+    &__container {
+      &__list {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+// .feature__container__list{
+//   display: flex;
+//   justify-content: space-between;
+
+// }
