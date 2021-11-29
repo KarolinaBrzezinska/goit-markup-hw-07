@@ -39,6 +39,7 @@ figure {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .list {
@@ -212,8 +213,8 @@ button {
   height: 294px;
   position: absolute;
   background-color: rgba(33, 150, 243, 0.9);
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 1px;
   transform: translateY(100%);
   color: #ffffff;
   transition-property: transform;
@@ -1182,7 +1183,7 @@ button {
 }
 
 .products {
-  margin-bottom: 94px;
+  margin-bottom: 30px;
 }
 
 .products__cards__list {
@@ -1191,7 +1192,13 @@ button {
   justify-content: space-between;
 }
 
-.products__cards__card:nth-child(-n + 6) {
-  margin-bottom: 30px;
+.products__cards__card {
+  margin-bottom: 29px;
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    margin-bottom: 64px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
