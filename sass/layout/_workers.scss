@@ -25,8 +25,31 @@
 //     }
 //   }
 // }
-@media screen and (min-width: 768px){
-  .workers{
-    display: none;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .workers {
+    display: flex;
+    &__list{
+      
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    &__header{
+      padding-top: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .workers {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      &__item{
+        margin-bottom: 0;
+
+      }
+    }
   }
 }

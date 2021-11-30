@@ -214,7 +214,12 @@
                 <img
                   class="workers-card__photo"
                   src="images/mobile/workers/1-mobile-workers.jpg"
-                  srcset="images/mobile/workers/1-mobile-workers@2x.jpg 2x"
+                  srcset="
+                    images/mobile/workers/1-mobile-workers.jpg   450w,
+                    images/tablet/workers/1-tablet-workers.jpg   768w,
+                    images/desktop/workers/1-desktop-workers.jpg 370w
+                  "
+                  sizes="(min-width: 480px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 370px "
                   alt="photo Product Designer"
                 />
                 <div class="workers-card__text">
@@ -456,7 +461,7 @@
     </main>
 
     <!-- Footer -->
-     <footer class="page-footer">
+    <footer class="page-footer">
       <div class="page-footer__container container">
         <div class="page-footer__contacts">
           <a
@@ -495,37 +500,38 @@
           <p class="page-footer__social-links__title">dołącz do nas</p>
           <ul class="page-footer__social-list list">
             <ul class="social-list list">
-                    <li class="social-list__item">
-                      <a class="social-list__item__link dark-theme" href="">
-                        <svg class="social-list__item__icon">
-                          <use href="images/icons.svg#icon-s3-insta"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__item__link dark-theme" href="">
-                        <svg class="social-list__item__icon">
-                          <use href="images/icons.svg#icon-s3-twitter"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__item__link dark-theme" href="">
-                        <svg class="social-list__item__icon">
-                          <use href="images/icons.svg#icon-s3-fb"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="social-list__item">
-                      <a class="social-list__item__link dark-theme" href="">
-                        <svg class="social-list__item__icon">
-                          <use href="images/icons.svg#icon-s3-in"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  
+              <li class="social-list__item">
+                <a class="social-list__item__link dark-theme" href="">
+                  <svg class="social-list__item__icon">
+                    <use href="images/icons.svg#icon-s3-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__item__link dark-theme" href="">
+                  <svg class="social-list__item__icon">
+                    <use href="images/icons.svg#icon-s3-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__item__link dark-theme" href="">
+                  <svg class="social-list__item__icon">
+                    <use href="images/icons.svg#icon-s3-fb"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__item__link dark-theme" href="">
+                  <svg class="social-list__item__icon">
+                    <use href="images/icons.svg#icon-s3-in"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </ul>
         </div>
+
         <div class="page-footer__form">
           <form
             name="newsletter-form"
@@ -542,7 +548,11 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="submit" class="btn page-footer__btn" name="newsletter-form">
+            <button
+              type="submit"
+              class="btn page-footer__btn"
+              name="newsletter-form"
+            >
               Zapisz się
               <svg class="newsletter-form__icon">
                 <use href="images/icons.svg#icon-footer-newsletter-sent"></use>
@@ -550,9 +560,10 @@
             </button>
           </form>
         </div>
-      </div> 
-    <!-- </footer> -->
-<!-- 
+      </div>
+    </footer>
+
+    <!-- 
     <div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn--close" data-modal-close>
