@@ -24,6 +24,7 @@
     flex-direction: column;
     margin-bottom: 60px;
     &__title {
+      font-size: 14px;
       text-align: center;
       color: $secondary-font-color;
       text-transform: uppercase;
@@ -33,30 +34,59 @@
   &__form {
     text-align: center;
   }
-  &__btn{
+  &__btn {
     margin-bottom: 20px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .page-footer {
-    &__container{
+    &__container {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
     }
-    &__contacts{
+    &__contacts {
       margin-right: 144px;
-      
     }
-    &__social-links{
-      &__title{
+    &__social-links {
+      &__title {
         margin-top: 65px;
       }
     }
-    &__btn{
+    &__btn {
       margin-bottom: 60px;
     }
-    
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    &__container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+      
+    }
+    &__form{
+        text-align: start;
+      }
+    &__contacts{
+      margin-top: 0;
+      text-align: start;
+      &__logo{
+        padding-top: 60px;
+        text-align: start;
+      }
+    }
+    &__social-links{
+      &__title{
+        padding-top: 72px;
+        text-align: start;
+      }
+    }
+    &__btn{
+      margin-left: 12px;
+    }
   }
 }
