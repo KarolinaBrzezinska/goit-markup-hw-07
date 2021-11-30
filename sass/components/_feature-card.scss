@@ -5,7 +5,7 @@
   margin-bottom: 30px;
   &__icon-box {
     background-color: $secondary-background-color;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     display: flex;
     justify-content: center;

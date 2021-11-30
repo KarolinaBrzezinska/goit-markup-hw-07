@@ -154,6 +154,10 @@ button {
   }
 }
 
+.address {
+  text-align: center;
+}
+
 .address__item:not(:last-child) {
   padding-bottom: 9px;
 }
@@ -631,6 +635,7 @@ button {
 
 .newsletter-form__label {
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .newsletter-form__icon {
@@ -645,11 +650,10 @@ button {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-left: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   margin-top: 20px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -689,6 +693,11 @@ button {
   fill: #fff;
 }
 
+.dark-theme {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #fff;
+}
+
 .feature-card {
   width: 450px;
   display: flex;
@@ -698,7 +707,7 @@ button {
 
 .feature-card__icon-box {
   background-color: #f5f4fa;
-  width: 450px;
+  max-width: 450px;
   height: 120px;
   display: flex;
   justify-content: center;
@@ -836,7 +845,7 @@ button {
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   display: flex;
   transition-property: fill;
   transition-duration: 250ms;
@@ -1135,33 +1144,50 @@ button {
 
 .page-footer__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.page-footer__left-side {
+.page-footer__contacts {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   margin-top: 60px;
 }
 
-.page-footer__left-side__logo {
+.page-footer__contacts__logo {
+  text-align: center;
   margin-bottom: 20px;
 }
 
-.page-footer____left-side__address {
+.page-footer__contacts__address {
   flex-direction: column;
 }
 
 .page-footer__social-links {
   flex-direction: column;
-  margin-top: 12px;
+  margin-bottom: 60px;
 }
 
 .page-footer__social-links__title {
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.page-footer__form {
+  text-align: center;
+}
+
+.page-footer__btn {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer {
+    display: none;
+  }
 }
 
 .menu-products {
