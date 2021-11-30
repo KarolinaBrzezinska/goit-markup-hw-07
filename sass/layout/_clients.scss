@@ -4,13 +4,28 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-content: center;
     }
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .clients {
-    padding-bottom: 30px;
+    &__container {
+      &__list {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__container {
+      &__list {
+        justify-content: space-between;
+      }
+    }
   }
 }
