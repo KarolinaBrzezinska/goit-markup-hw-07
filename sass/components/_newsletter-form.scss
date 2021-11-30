@@ -28,3 +28,12 @@
     }
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .newsletter-form {
+    &__label {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

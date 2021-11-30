@@ -673,6 +673,13 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .newsletter-form__label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .social-list {
   display: flex;
 }
@@ -1206,9 +1213,20 @@ button {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .page-footer {
-    display: none;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .page-footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .page-footer__contacts {
+    margin-right: 144px;
+  }
+  .page-footer__social-links__title {
+    margin-top: 65px;
+  }
+  .page-footer__btn {
+    margin-bottom: 60px;
   }
 }
 
