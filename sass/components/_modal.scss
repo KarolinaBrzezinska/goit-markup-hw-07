@@ -15,6 +15,10 @@
   transform: translate3d(0, 0, 0, 0);
   opacity: 1;
 }
+.modal__backdrop--is-hidden .modal {
+  transform: translate3d(0, -2rem, 0);
+  opacity: 0;
+}
 .modal__backdrop {
   position: fixed;
   left: 0;
@@ -27,115 +31,115 @@
     duration: 0.5s;
     timing-function: $timing-transition;
   }
-}
-.modal__backdrop--is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.modal__backdrop--is-hidden .modal {
-  transform: translate3d(0, -2rem, 0);
-  opacity: 0;
+  &--is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
-.modal__btn--close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: $main-background-color;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  cursor: pointer;
-}
-.modal__btn--icon {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  fill: #000000;
-  top: 9px;
-  left: 10px;
-}
-
-.modal__form__group {
-  display: block;
-  border: none;
-  margin: 0;
-  padding: 0;
+.modal__btn {
+  &--close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: $main-background-color;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &--icon {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    fill: #000000;
+    top: 9px;
+    left: 10px;
+  }
 }
 
-.modal__form__header {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: $strong-font-color;
-  padding: 40px 40px 12px 40px;
-}
+.modal__form {
+  &__group {
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.modal__form__label,
-.modal__form__usercomment {
-  display: flex;
-  flex-direction: column;
-  font-size: 12px;
-  line-height: 1.167;
-  letter-spacing: 0.01em;
-  margin-bottom: 10px;
-  position: relative;
-}
-.modal__form__input {
-  padding-left: 42px;
-  margin-top: 4px;
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline-color: $brand-color;
-  &:focus + .modal__form__icon {
+  &__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $strong-font-color;
+    padding: 40px 40px 12px 40px;
+  }
+  &__label,
+  &__usercomment {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  &__usercomment {
+    margin-bottom: 20px;
+    &--text {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      width: 448px;
+      min-height: 120px;
+      padding-left: 16px;
+      padding-top: 12px;
+      color: rgba(117, 117, 117, 0.5);
+      margin-top: 4px;
+      outline-color: $brand-color;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 31px;
+    left: 15px;
+    background-color: $main-background-color;
+    &--name {
+      width: 12px;
+      height: 12px;
+    }
+    &--tel {
+      width: 13px;
+      height: 13px;
+    }
+    &--email {
+      width: 15px;
+      height: 12px;
+    }
+  }
+  &__input {
+    padding-left: 42px;
+    margin-top: 4px;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
     outline-color: $brand-color;
-    fill: $brand-color;
-    transition: {
-      duration: 250ms;
-      timing-function: $timing-transition;
+
+    &:focus + .modal__form__icon {
+      outline-color: $brand-color;
+      fill: $brand-color;
+      transition: {
+        duration: 250ms;
+        timing-function: $timing-transition;
+      }
     }
   }
 }
 
-.modal__form__usercomment {
-  margin-bottom: 20px;
-}
-.modal__form__usercomment--text {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  width: 448px;
-  min-height: 120px;
-  padding-left: 16px;
-  padding-top: 12px;
-  color: rgba(117, 117, 117, 0.5);
-  margin-top: 4px;
-  outline-color: $brand-color;
-}
-.modal__form__icon {
-  position: absolute;
-  top: 31px;
-  left: 15px;
-  background-color: $main-background-color;
-}
-
-.modal__form__icon--name {
-  width: 12px;
-  height: 12px;
-}
-.modal__form__icon--tel {
-  width: 13px;
-  height: 13px;
-}
-.modal__form__icon--email {
-  width: 15px;
-  height: 12px;
-}
 .div-class {
   display: flex;
   flex-direction: column;
@@ -152,39 +156,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.modal__declaration__input {
-  margin-right: 7px;
-  &:checked + .modal__declaration__label::before {
-    content: "";
-    position: absolute;
-    border-radius: 2px;
-    background-color: $brand-color;
-    background-image: url("../images/checkbox.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: none;
-    width: 16px;
-    height: 15px;
-
-    position: relative;
-  }
-}
-.modal__declaration__label {
-  margin-bottom: 30px;
-  &:before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 15px;
-    border: 1px solid #000;
+  &__input {
     margin-right: 7px;
-    border-radius: 2px;
+    &:checked + .modal__declaration__label::before {
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+      background-color: $brand-color;
+      background-image: url("../images/checkbox.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      width: 16px;
+      height: 15px;
+
+      position: relative;
+    }
+  }
+  &__label {
+    margin-bottom: 30px;
+    &:before {
+      display: inline-block;
+      content: "";
+      width: 16px;
+      height: 15px;
+      border: 1px solid #000;
+      margin-right: 7px;
+      border-radius: 2px;
+    }
+  }
+  &__link {
+    color: $brand-color;
   }
 }
 
-.modal__declaration__link {
-  color: $brand-color;
+@media screen and (max-width: 1200px) {
+  .modal{
+    width: 450px;
+  }
+  .modal__declaration {
+    &__label {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .modal__form {
+    &__header {
+      width: 370px;
+    }
+    &__input {
+      width: 370px;
+    }
+    &__usercomment {
+      &--text {
+        width: 370px;
+      }
+    }
+  }
 }
