@@ -22,9 +22,16 @@
 
 @media screen and (min-width: 1200px) {
   .clients {
+    padding-top: 94px;
+    &__item{
+      &__link{
+        margin-bottom: 0;
+      }
+    }
     &__container {
       &__list {
         justify-content: space-between;
+        flex-direction: row;
       }
     }
   }

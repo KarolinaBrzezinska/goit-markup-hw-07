@@ -192,7 +192,7 @@ button {
   font-style: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
-  max-width: 200px;
+  width: 200px;
   height: 50px;
   background-color: #2196f3;
   color: #ffffff;
@@ -1153,7 +1153,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .feature {
-    margin-bottom: 94px;
+    margin-bottom: 0;
   }
   .feature__container__list {
     display: flex;
@@ -1231,8 +1231,15 @@ button {
 }
 
 @media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+  }
+  .clients__item__link {
+    margin-bottom: 0;
+  }
   .clients__container__list {
     justify-content: space-between;
+    flex-direction: row;
   }
 }
 

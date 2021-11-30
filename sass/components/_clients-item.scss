@@ -1,10 +1,4 @@
 .clients {
-  
-  &__container{
-    &__list{
-    
-    }
-  }
   &__item {
     &__link {
       width: 210px;
@@ -36,20 +30,18 @@
     }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .clients {
-    &__item{
-      &__link{
+    &__item {
+      &__link {
         width: 226px;
       }
     }
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .clients {
-   
     &__item {
       &__link {
         width: 170px;
@@ -60,5 +52,5 @@
         }
       }
     }
-   }
+  }
 }
