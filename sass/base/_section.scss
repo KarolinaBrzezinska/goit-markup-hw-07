@@ -19,3 +19,14 @@
     }
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__header {
+      font-size: 36px;
+      line-height: 1.167;
+    }
+  }
+}
