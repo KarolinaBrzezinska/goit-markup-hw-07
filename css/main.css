@@ -1016,6 +1016,12 @@ button {
   padding-bottom: 48px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .social-media {
   width: 357px;
   justify-content: space-between;
