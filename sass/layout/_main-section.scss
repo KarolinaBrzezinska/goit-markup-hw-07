@@ -3,7 +3,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mobile/bg/1-mobile-bgi.jpg);
+    url(../images/mobile/bg/1-mobile-bgi.jpg);
   background: cover;
   &__container {
     display: flex;
@@ -13,7 +13,7 @@
     background-repeat: no-repeat;
   }
   &__header {
-    width: 365px;
+    max-width: 365px;
     padding-bottom: 30px;
     font-weight: 900;
     font-size: 26px;
@@ -31,10 +31,10 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile/bg/1-mobile-bgi.jpg);
+      url(../images/mobile/bg/1-mobile-bgi.jpg);
     background-size: cover;
     &__container {
-      width: 480px;
+      max-width: 480px;
       height: 400px;
     }
   }
@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile/bg/1-mobile-bgi@2x.jpg);
+      url(../images/mobile/bg/1-mobile-bgi@2x.jpg);
   }
 }
 
@@ -59,7 +59,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/bg/1-tablet-bgi.jpg);
+      url(../images/tablet/bg/1-tablet-bgi.jpg);
     background-size: cover;
     &__container {
       height: 400px;
@@ -75,7 +75,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet/bg/1-tablet-bgi@2x.jpg);
+      url(../images/tablet/bg/1-tablet-bgi@2x.jpg);
   }
 }
 
@@ -86,7 +86,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/desktop/bg/main-bgi-desktop.jpg);
+      url(../images/desktop/bg/main-bgi-desktop.jpg);
     background-size: cover;
 
     &__container {
@@ -109,6 +109,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/desktop/bg/main-bgi-desktop@2x.jpg);
+      url(../images/desktop/bg/main-bgi-desktop@2x.jpg);
   }
 }
