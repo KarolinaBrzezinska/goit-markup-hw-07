@@ -1,10 +1,5 @@
 .main-section {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/mobile/bg/1-mobile-bgi.jpg);
-  background: cover;
+  background-size: cover;
   &__container {
     display: flex;
     flex-direction: column;
@@ -13,7 +8,7 @@
     background-repeat: no-repeat;
   }
   &__header {
-    max-width: 365px;
+    width: 365px;
     padding-bottom: 30px;
     font-weight: 900;
     font-size: 26px;
@@ -25,14 +20,13 @@
   }
 }
 // mobile
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .main-section {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/mobile/bg/1-mobile-bgi.jpg);
-    background-size: cover;
+      url(../../images/mobile/bg/1-mobile-bgi.jpg);
     &__container {
       max-width: 480px;
       height: 400px;
@@ -48,7 +42,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/mobile/bg/1-mobile-bgi@2x.jpg);
+      url(../../images/mobile/bg/1-mobile-bgi@2x.jpg);
   }
 }
 
@@ -59,7 +53,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/tablet/bg/1-tablet-bgi.jpg);
+      url(../../images/tablet/bg/1-tablet-bgi.jpg);
     background-size: cover;
     &__container {
       height: 400px;
@@ -75,7 +69,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/tablet/bg/1-tablet-bgi@2x.jpg);
+      url(../../images/tablet/bg/1-tablet-bgi@2x.jpg);
   }
 }
 
@@ -86,7 +80,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/desktop/bg/main-bgi-desktop.jpg);
+      url(../../images/desktop/bg/main-bgi-desktop.jpg);
     background-size: cover;
 
     &__container {
@@ -94,7 +88,7 @@
       background-image: none;
     }
     &__header {
-      max-width: 696px;
+      width: 696px;
       font-size: 44px;
       line-height: 1.364;
       letter-spacing: 0.06em;
@@ -109,6 +103,6 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/desktop/bg/main-bgi-desktop@2x.jpg);
+      url(../../images/desktop/bg/main-bgi-desktop@2x.jpg);
   }
 }
