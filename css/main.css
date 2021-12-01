@@ -998,22 +998,22 @@ button {
   }
 }
 
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 796px;
-  background-color: #ffffff;
-}
-
-.mobile-menu__nav {
-  padding-top: 48px;
-  margin-left: 40px;
-}
-
-.mobile-menu__social-media {
-  padding-bottom: 48px;
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 796px;
+    background-color: #ffffff;
+  }
+  .mobile-menu__nav {
+    padding-top: 48px;
+    margin-left: 40px;
+  }
+  .mobile-menu__social-media {
+    padding-bottom: 48px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1037,9 +1037,9 @@ button {
   letter-spacing: 0.02em;
 }
 
-.social-media__item::after {
+.social-media__item:not(:last-child)::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 10px;
   width: 22px;
   height: 0px;
