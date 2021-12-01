@@ -1223,7 +1223,7 @@ button {
     background-image: none;
   }
   .main-section__header {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.364;
     letter-spacing: 0.06em;
