@@ -17,11 +17,7 @@
       fill: $brand-color;
     }
   }
-  &__item {
-    &:not(last-child) {
-      margin-right: 30px;
-    }
-  }
+
   &__icon {
     &--mail {
       width: 16px;
@@ -34,5 +30,46 @@
       height: 16px;
       margin-right: 10px;
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts {
+    margin-left: 40px;
+    flex-direction: column;
+    &__item {
+      margin-bottom: 32px;
+    }
+    &__link {
+      font-size: 34px;
+      letter-spacing: 0.02em;
+      color: $normal-font-color;
+      &--phone {
+        color: $brand-color;
+      }
+      &--mail{
+        font-size: 24px;
+      }
+    }
+    &__icon {
+      &--mail,
+      &--phone {
+        display: none;
+      }
+    }
+  }
+}
+
+// @media screen and (min-width: 768px) and (max-width: 1200px){
+//   .contacts{
+//     width: 100%;
+//   }
+// }
+
+@media screen and (min-width: 1200px){
+  .contacts{
+    width: 321px;
+    display: flex;
+    justify-content: space-between;
   }
 }

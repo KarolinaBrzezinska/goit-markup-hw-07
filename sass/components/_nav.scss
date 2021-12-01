@@ -22,3 +22,20 @@
     margin-right: 46px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    &__link {
+      font-weight: 500;
+      font-size: 40px;
+      letter-spacing: 0.02em;
+      color: 	$strong-font-color;
+     
+    }
+    &__item{
+      margin-bottom: 32px;
+    }
+  }
+}

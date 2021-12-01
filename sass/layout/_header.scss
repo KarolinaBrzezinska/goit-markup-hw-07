@@ -79,10 +79,7 @@
   .page-header {
     border: 1px solid $header-border-color;
     width: 100%;
-    &__container {
-      display: flex;
-      justify-content: space-between;
-    }
+   
     &__logo {
       margin: 16px 0;
     }

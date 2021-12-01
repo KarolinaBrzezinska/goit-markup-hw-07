@@ -214,7 +214,6 @@
                 <img
                   class="workers-card__photo"
                   src="images/mobile/workers/1-mobile-workers.jpg"
-                  
                   alt="photo Product Designer"
                 />
                 <div class="workers-card__text">
@@ -456,7 +455,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="page-footer__container container">
         <div class="page-footer__contacts">
           <a
@@ -556,11 +555,63 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <!-- menu mobile-->
 
-    <!-- menu modal-->
+    <div class="mobile-menu">
+      <nav class="mobile-menu__nav">
+        <ul class="nav list">
+          <li class="nav__item active">
+            <a class="nav__link link" href="#"> Agencja</a>
+          </li>
 
-    
+          <li class="nav__item">
+            <a class="nav__link link" href="portfolio.html">Portfolio</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link link" href="#">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__contacts">
+        <ul class="mobile-menu__contacts contacts list">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--phone link" href="tel:+48111111111">
+              <svg class="contacts__icon--phone">
+                <use href="images/icons.svg#icon-header-2smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--mail link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon--mail">
+                <use href="images/icons.svg#icon-header-1envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+          <ul class="mobile-menu__social-media social-media list">
+            <li class="social-media__item">
+              <a href="#" class="social-media__link link">Instagram</a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link link">Twitter</a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link link">Facebook</a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link link">Linkedin</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- modal-->
+
     <div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn--close" data-modal-close>
@@ -628,6 +679,5 @@
       </div>
     </div>
     <script src="js/modal.js"></script>
-    
   </body>
 </html>
