@@ -4,13 +4,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 400px;
     background-repeat: no-repeat;
   }
   &__header {
     font-weight: 900;
     color: $secondary-font-color;
     text-transform: uppercase;
+    padding-bottom: 30px;
   }
 }
 // mobile
@@ -28,7 +28,6 @@
     &__header {
       width: 365px;
       max-width: 100%;
-      padding-bottom: 30px;
       font-size: 26px;
       line-height: 1.615;
       text-align: center;
