@@ -1,6 +1,6 @@
 .page-header {
   border-bottom: 1px solid $header-border-color;
-  width: 100%;
+  max-width: 100%;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -9,7 +9,6 @@
     margin: 16px 0;
   }
   &__menu {
-    display: block;
     padding: 22px;
     &__burger {
       width: 24px;
@@ -24,49 +23,26 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-header {
-    border: 1px solid $header-border-color;
-    width: 100%;
-    &__container {
-      display: flex;
-      justify-content: space-between;
-    }
+    max-width: 100%;
     &__logo {
       margin: 26px 0;
     }
-    &__menu {
-      padding: 22px;
-      &__burger {
-        width: 24px;
-        height: 16px;
-      }
-    }
-    &__nav {
-      display: none;
-    }
-    &__contacts {
-      display: none;
-    }
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header {
-    display: flex;
-    border: 1px solid $header-border-color;
-    width: 100%;
     &__container {
-      display: flex;
-      justify-content: space-between;
-    }
-    &__logo {
-      margin: 25px 0;
+      padding-top: 21px;
+      padding-bottom: 11px;
     }
     &__menu {
       display: none;
     }
     &__nav {
-      display: flex;
+      display: block;
+      width: 282px;
     }
     &__contacts {
       display: flex;
@@ -79,7 +55,7 @@
   .page-header {
     border: 1px solid $header-border-color;
     width: 100%;
-   
+
     &__logo {
       margin: 16px 0;
     }

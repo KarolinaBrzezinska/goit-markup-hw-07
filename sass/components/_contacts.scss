@@ -1,39 +1,21 @@
 .contacts {
   display: flex;
   &__link {
-    font-size: 14px;
-    line-height: 1.142;
-    font-weight: 500;
     color: $normal-font-color;
-    letter-spacing: 0.02em;
-    transition: {
-      property: color, fill;
-      duration: 250ms;
-      timing-function: $timing-transition;
-    }
     &:hover,
     &:focus {
       color: $brand-color;
       fill: $brand-color;
     }
-  }
-
-  &__icon {
-    &--mail {
-      width: 16px;
-      height: 12px;
-      margin-right: 10px;
-    }
-    &--phone {
-      vertical-align: text-bottom;
-      width: 10px;
-      height: 16px;
-      margin-right: 10px;
+    transition: {
+      property: color, fill;
+      duration: 250ms;
+      timing-function: $timing-transition;
     }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     margin-left: 40px;
     flex-direction: column;
@@ -41,14 +23,21 @@
       margin-bottom: 32px;
     }
     &__link {
-      font-size: 34px;
-      letter-spacing: 0.02em;
       color: $normal-font-color;
-      &--phone {
-        color: $brand-color;
-      }
-      &--mail{
+      &--mail {
+        font-weight: 500;
         font-size: 24px;
+        line-height: 1.166;
+        letter-spacing: 0.02em;
+        color: #757575;
+      }
+      &--phone {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.176;
+
+        letter-spacing: 0.02em;
+        color: $brand-color;
       }
     }
     &__icon {
@@ -60,14 +49,33 @@
   }
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1200px){
-//   .contacts{
-//     width: 100%;
-//   }
-// }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    &__link {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1, 167;
+      letter-spacing: 0.02em;
+      
+    }
+    &__item{
+      margin-bottom: 10px;
+    }
+    &__icon {
+      &--phone {
+        width: 10px;
+        height: 14px;
+      }
+      &--mail {
+        width: 14px;
+        height: 10px;
+      }
+    }
+  }
+}
 
-@media screen and (min-width: 1200px){
-  .contacts{
+@media screen and (min-width: 1200px) {
+  .contacts {
     width: 321px;
     display: flex;
     justify-content: space-between;

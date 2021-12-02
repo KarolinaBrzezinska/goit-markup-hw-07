@@ -57,7 +57,7 @@ button {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding: 0 15px;
   align-items: center;
   margin: 0 auto;
@@ -112,56 +112,6 @@ button {
   .section__header {
     font-size: 36px;
     line-height: 1.167;
-  }
-}
-
-.active {
-  position: relative;
-}
-
-.active:after {
-  position: absolute;
-  bottom: -28px;
-  right: 0;
-  content: "";
-  border-radius: 2px;
-  background-color: #2196f3;
-}
-
-.active-portfolio {
-  position: relative;
-}
-
-.active-portfolio:after {
-  position: absolute;
-  bottom: -28px;
-  right: 0;
-  content: "";
-  border-radius: 2px;
-  background-color: #2196f3;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .active:after {
-    width: 53px;
-    height: 4px;
-    bottom: -30px;
-  }
-  .active-portfolio:after {
-    width: 58px;
-    height: 4px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .active:after {
-    width: 53px;
-    height: 4px;
-    bottom: -22px;
-  }
-  .active-portfolio:after {
-    width: 58px;
-    bottom: -32px;
   }
 }
 
@@ -312,11 +262,7 @@ button {
 }
 
 .contacts__link {
-  font-size: 14px;
-  line-height: 1.142;
-  font-weight: 500;
   color: #757575;
-  letter-spacing: 0.02em;
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -327,20 +273,7 @@ button {
   fill: #2196f3;
 }
 
-.contacts__icon--mail {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-}
-
-.contacts__icon--phone {
-  vertical-align: text-bottom;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .contacts {
     margin-left: 40px;
     flex-direction: column;
@@ -349,18 +282,44 @@ button {
     margin-bottom: 32px;
   }
   .contacts__link {
-    font-size: 34px;
+    color: #757575;
+  }
+  .contacts__link--mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
     letter-spacing: 0.02em;
     color: #757575;
   }
   .contacts__link--phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
     color: #2196f3;
-  }
-  .contacts__link--mail {
-    font-size: 24px;
   }
   .contacts__icon--mail, .contacts__icon--phone {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1, 167;
+    letter-spacing: 0.02em;
+  }
+  .contacts__item {
+    margin-bottom: 10px;
+  }
+  .contacts__icon--phone {
+    width: 10px;
+    height: 14px;
+  }
+  .contacts__icon--mail {
+    width: 14px;
+    height: 10px;
   }
 }
 
@@ -673,15 +632,8 @@ button {
   }
 }
 
-.nav {
-  display: flex;
-}
-
 .nav__link {
   color: #212121;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
   letter-spacing: 0.02em;
   transition-property: color, fill;
   transition-duration: 250ms;
@@ -693,11 +645,7 @@ button {
   fill: #2196f3;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 46px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .nav {
     display: flex;
     flex-direction: column;
@@ -705,11 +653,29 @@ button {
   .nav__link {
     font-weight: 500;
     font-size: 40px;
-    letter-spacing: 0.02em;
-    color: #212121;
   }
   .nav__item {
     margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 143;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 143;
   }
 }
 
@@ -1052,9 +1018,61 @@ button {
   color: #2196f3;
 }
 
+.active {
+  color: #2196f3;
+  position: relative;
+}
+
+.active:after {
+  position: absolute;
+  bottom: -28px;
+  right: 0;
+  content: "";
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.active-portfolio {
+  color: #2196f3;
+  position: relative;
+}
+
+.active-portfolio:after {
+  position: absolute;
+  bottom: -28px;
+  right: 0;
+  content: "";
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .active:after {
+    width: 53px;
+    height: 4px;
+    bottom: -30px;
+  }
+  .active-portfolio:after {
+    width: 58px;
+    height: 4px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .active:after {
+    width: 53px;
+    height: 4px;
+    bottom: -22px;
+  }
+  .active-portfolio:after {
+    width: 58px;
+    bottom: -32px;
+  }
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
-  width: 100%;
+  max-width: 100%;
 }
 
 .page-header__container {
@@ -1067,7 +1085,6 @@ button {
 }
 
 .page-header__menu {
-  display: block;
   padding: 22px;
 }
 
@@ -1084,51 +1101,26 @@ button {
   display: none;
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .page-header {
-    border: 1px solid #ececec;
-    width: 100%;
-  }
-  .page-header__container {
-    display: flex;
-    justify-content: space-between;
+    max-width: 100%;
   }
   .page-header__logo {
     margin: 26px 0;
   }
-  .page-header__menu {
-    padding: 22px;
-  }
-  .page-header__menu__burger {
-    width: 24px;
-    height: 16px;
-  }
-  .page-header__nav {
-    display: none;
-  }
-  .page-header__contacts {
-    display: none;
-  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  .page-header {
-    display: flex;
-    border: 1px solid #ececec;
-    width: 100%;
-  }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header__container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .page-header__logo {
-    margin: 25px 0;
+    padding-top: 21px;
+    padding-bottom: 11px;
   }
   .page-header__menu {
     display: none;
   }
   .page-header__nav {
-    display: flex;
+    display: block;
+    width: 282px;
   }
   .page-header__contacts {
     display: flex;
@@ -1168,15 +1160,9 @@ button {
 }
 
 .main-section__header {
-  width: 365px;
-  padding-bottom: 30px;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.615;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
@@ -1187,15 +1173,25 @@ button {
     max-width: 480px;
     height: 400px;
   }
+  .main-section__header {
+    width: 365px;
+    max-width: 100%;
+    padding-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 768px) {
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/bg/1-mobile-bgi@2x.jpg);
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/bg/1-tablet-bgi.jpg);
     background-size: cover;
@@ -1205,7 +1201,7 @@ button {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px), screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
   .main-section {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/bg/1-tablet-bgi@2x.jpg);
   }
