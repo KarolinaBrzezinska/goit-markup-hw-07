@@ -23,7 +23,7 @@
   position: fixed;
   left: 0;
   top: 0;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: {
@@ -192,7 +192,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .modal{
     width: 450px;
   }
@@ -214,5 +214,14 @@
         width: 370px;
       }
     }
+  }
+}
+@media screen and (min-width: 1200px){
+  .modal{
+    &__form{
+    &__label{
+      margin-right: 30px;
+    }
+  }
   }
 }
