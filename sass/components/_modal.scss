@@ -1,12 +1,10 @@
 .modal {
-  display: flex;
-  flex-direction: column;
+  
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 528px;
-  height: 581px;
+
   background-color: $main-background-color;
   transition: {
     property: transform, opacity;
@@ -15,6 +13,7 @@
   transform: translate3d(0, 0, 0, 0);
   opacity: 1;
   &__btn {
+    margin-left: 85px;
     &--close {
       position: absolute;
       top: 8px;
@@ -172,6 +171,7 @@
 @media screen and (max-width: 1199px) {
   .modal {
     width: 450px;
+    height: 609px;
   }
   .modal__declaration {
     &__label {
@@ -195,10 +195,15 @@
 }
 @media screen and (min-width: 1200px) {
   .modal {
+    max-width: 528px;
+    height: 581px;
     &__form {
       &__label {
         margin-right: 30px;
       }
+    }
+    &__btn {
+      margin-left: 124px;
     }
   }
 }

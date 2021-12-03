@@ -637,7 +637,7 @@
           </svg>
         </button>
 
-        <form class="modal__form">
+        <form class="modal__form" action="#" method="post">
           <fieldset class="modal__form__group">
             <legend class="modal__form__header">
               Zostaw swoje dane w formularzu poniżej
@@ -673,25 +673,22 @@
                   placeholder="Wprowadź tekst"
                 ></textarea>
               </label>
+              <input
+                class="modal__declaration__input visually-hidden"
+                id="user-policy"
+                type="checkbox"
+                name="policy"
+              />
+              <label for="user-policy" class="modal__declaration__label"
+                >Oświadczam iż akceptuję
+                <a class="modal__declaration__link">Regulamin </a>
+                &nbspi&nbsp
+                <a class="modal__declaration__link"> Politykę Prywatności</a
+                >.</label
+              >
+              <button class="modal__btn btn" type="submit">Wyślij</button>
             </div>
           </fieldset>
-        </form>
-
-        <form class="modal__declaration" action="#" method="post">
-          <input
-            class="modal__declaration__input visually-hidden"
-            id="user-policy"
-            type="checkbox"
-            name="policy"
-          />
-          <label for="user-policy" class="modal__declaration__label"
-            >Oświadczam iż akceptuję
-            <a class="modal__declaration__link">Regulamin </a>
-            &nbspi&nbsp
-            <a class="modal__declaration__link"> Politykę Prywatności</a
-            >.</label
-          >
-          <button class="modal__btn btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
