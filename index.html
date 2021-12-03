@@ -460,7 +460,7 @@
       </section>
     </main>
     <!-- menu mobile-->
-    <div class="is-hidden mobile-menu__backdrop" data-mobile-menu>
+    <div class=" backdrop backdrop__is-hidden" data-mobile-menu>
       <div class="mobile-menu">
 
         <button class="mobile-menu__btn" data-menu-close>
@@ -631,14 +631,14 @@
 
     <!-- modal-->
 
-    <div class="modal__backdrop modal__backdrop--is-hidden" data-modal>
+    <div class="backdrop backdrop__is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__btn--close" data-modal-close>
           <svg class="modal__btn--icon">
             <use href="images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-
+<div class="modal__form">
         <form class="modal__form">
           <fieldset class="modal__form__group">
             <legend class="modal__form__header">
@@ -695,6 +695,7 @@
           >
           <button class="modal__btn btn" type="submit">Wyślij</button>
         </form>
+        </div>
       </div>
     </div>
     <script src="js/modal.js"></script>
