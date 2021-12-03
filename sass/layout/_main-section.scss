@@ -61,6 +61,10 @@
     &__container {
       height: 400px;
     }
+    &__header {
+      width: 365px;
+      text-align: center;
+    }
   }
 }
 
@@ -91,7 +95,8 @@
       background-image: none;
     }
     &__header {
-      width: 696px;
+      max-width: 696px;
+      text-align: center;
       font-size: 44px;
       line-height: 1.364;
       letter-spacing: 0.06em;
