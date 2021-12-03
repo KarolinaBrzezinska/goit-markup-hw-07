@@ -43,6 +43,7 @@
   opacity: 0;
 }
 .mobile-menu__backdrop {
+  z-index: 3;
   position: fixed;
   left: 0;
   top: 0;
